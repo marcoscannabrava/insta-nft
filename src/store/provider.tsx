@@ -4,7 +4,7 @@ import { Provider } from './createContext';
 
 // The provider, which holds the page-wide store and its actions.
 // Feel free to abstract actions and state away from this file.
-class AppProvider extends Component {
+export default class AppProvider extends Component {
   state = {
     open: false,
     showModal: () => this.setState({ open: true }),
@@ -19,5 +19,3 @@ class AppProvider extends Component {
 AppProvider.propTypes = {
   children: PropTypes.node.isRequired,
 };
-
-export default AppProvider;
