@@ -18,7 +18,7 @@ const Index = ({ data }) => (
         className="btn"
         style={{ margin: '2rem' }}
         onClick={() => {
-          window.location.href = `https://api.instagram.com/oauth/authorize?client_id=${process.env.INSTAGRAM_APP_ID}&redirect_uri=${process.env.CLIENT_URL}${process.env.INSTAGRAM_REDIRECT_PATH}&scope=user_profile,user_media&response_type=code`;
+          window.location.href = `https://api.instagram.com/oauth/authorize?client_id=${process.env.GASTBY_INSTAGRAM_APP_ID}&redirect_uri=${process.env.GASTBY_CLIENT_URL}${process.env.GASTBY_INSTAGRAM_REDIRECT_PATH}&scope=user_profile,user_media&response_type=code`;
         }}
       >
         Open Insta API
